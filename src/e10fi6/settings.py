@@ -83,6 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
             'read_default_file': './.my.cnf',
+            'sql_mode':'traditional',
         },
     }
 }
@@ -131,7 +132,7 @@ STATICFILES_DIRS = [
     ("js", BASE_DIR / "js"),
 ]
 
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = BASE_DIR / 'mediafiles'
 MEDIA_URL = '/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
