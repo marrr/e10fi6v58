@@ -35,6 +35,7 @@ url_users = [
 urlpatterns = [
     path("", include('page.urls')),
     path('admin/', admin.site.urls),
+    path("journal/", include('journal.urls')),
 ]
 
 urlpatterns += url_users
